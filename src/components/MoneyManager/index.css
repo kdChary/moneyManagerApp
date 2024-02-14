@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', 'Courier, monospace';
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  /* align-self: center; */
+  margin: 78px auto;
+  max-height: 100vh;
+  height: 90vh;
+}
+
+.user-details-section {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  width: 80%;
+  background-size: cover;
+  border-radius: 13px;
+  padding: 19px 23px;
+  box-shadow: 0 0 4px #bcd5f8;
+}
+
+.greet-user {
+  color: #475569;
+  font-weight: 600;
+}
+.welcome-msg {
+  color: #475569;
+  font-weight: 600;
+}
+.welcome-title {
+  color: #0b69ff;
+  font-weight: 600;
+}
+
+.transactions-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 13px;
+  align-self: center;
+  width: 80%;
+  padding: 11px 15px;
+}
+.transactions-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 13px;
+  border: solid 1px #cbd5e1;
+  padding: 31px;
+  box-shadow: 0 0 2px #bcd5f8;
+  width: 47%;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7e858e;
+  margin-bottom: 2px;
+  /* align-self: flex-start; */
+}
+.input {
+  margin-bottom: 21px;
+  width: 95%;
+  height: 29px;
+  outline: none;
+  border: solid 1px #7e858e;
+  border-radius: 4px;
+  padding-left: 9px;
+  font-family: 'Roboto';
+}
+
+.form-button {
+  padding: 5px 9px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  align-self: flex-start;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  border: solid 1px #cbd5e1;
+  padding: 4px 31px;
+  box-shadow: 0 0 2px #bcd5f8;
+  width: 47%;
+}
+
+.history-title {
+  color: #475569;
+  margin-bottom: 5px;
+  margin-top: 7px;
+}
+
+.history-items-list {
+  margin-top: 0;
+  border: solid 1.1px #7e858e;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history-header {
+  border-bottom: solid 1px #7e858e;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.header-info {
+  font-weight: 600;
+  font-size: 13px;
+  color: #1e293b;
+}
