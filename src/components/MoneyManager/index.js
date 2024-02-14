@@ -69,26 +69,6 @@ class MoneyManager extends Component {
     }))
   }
 
-  renderTransactionItem = () => {
-    const {transactionList} = this.state
-    return (
-      <ul className="history-items-list">
-        <li className="history-header">
-          <p className="header-info">Title</p>
-          <p className="header-info">Amount</p>
-          <p className="header-info">Type</p>
-        </li>
-        {transactionList.map(transaction => (
-          <TransactionItem
-            key={transaction.id}
-            transactionDetails={transaction}
-            deleteTransaction={this.deleteTransaction}
-          />
-        ))}
-      </ul>
-    )
-  }
-
   calculateIncome = () => {
     const {transactionList} = this.state
 
@@ -117,7 +97,12 @@ class MoneyManager extends Component {
     const expenses = this.calculateExpenses()
     const income = this.calculateIncome()
     const balance = income - expenses
-    const {titleInput, amountInput, transactionType} = this.state
+    const {
+      titleInput,
+      amountInput,
+      transactionType,
+      transactionList,
+    } = this.state
     return (
       <div className="app-container">
         <div className="user-details-section">
@@ -175,7 +160,22 @@ class MoneyManager extends Component {
             </form>
             <div className="history-section">
               <h2 className="history-title">History</h2>
-              {this.renderTransactionItem()}
+              <div>
+                <ul className="history-items-list">
+                  <li className="history-header-item">
+                    <p className="header-info">Title</p>
+                    <p className="header-info">Amount</p>
+                    <p className="header-info">Type</p>
+                  </li>
+                  {transactionList.map(transaction => (
+                    <TransactionItem
+                      key={transaction.id}
+                      transactionDetails={transaction}
+                      deleteTransaction={this.deleteTransaction}
+                    />
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

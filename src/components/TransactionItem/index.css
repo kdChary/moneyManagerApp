@@ -1,1 +1,48 @@
-/* Write your CSS here */
+.transaction-history-item {
+  border-bottom: solid 1px #7e858e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 7px 0 11px;
+}
+
+.item-alignment {
+  display: flex;
+  justify-content: space-between;
+
+  width: 75%;
+}
+.history-item {
+  font-family: 'Roboto';
+  font-size: 11px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.item-delete-btn {
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  align-self: center;
+  /* margin-left: 0;*/
+  margin-right: 5px;
+  justify-self: flex-end;
+}
+
+.delete-icon {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .history-item {
+    font-size: 7px;
+    font-weight: 600;
+  }
+  .item-delete-btn {
+    width: 11px;
+    height: 11px;
+  }
+}

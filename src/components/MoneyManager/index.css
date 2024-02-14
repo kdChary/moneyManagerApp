@@ -11,8 +11,7 @@
   width: 80%;
   /* align-self: center; */
   margin: 78px auto;
-  max-height: 100vh;
-  height: 90vh;
+  min-height: 100vh;
 }
 
 .user-details-section {
@@ -35,6 +34,23 @@
 .welcome-title {
   color: #0b69ff;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .user-details-section {
+    text-align: center;
+  }
+  .greet-user {
+    font-size: 21px;
+  }
+  .welcome-msg {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .welcome-title {
+    font-size: 13px;
+    font-weight: 600;
+  }
 }
 
 .transactions-section {
@@ -61,7 +77,7 @@
   border: solid 1px #cbd5e1;
   padding: 31px;
   box-shadow: 0 0 2px #bcd5f8;
-  width: 47%;
+  width: 41%;
 }
 
 .label {
@@ -101,13 +117,32 @@
   border: solid 1px #cbd5e1;
   padding: 4px 31px;
   box-shadow: 0 0 2px #bcd5f8;
-  width: 47%;
+  width: 46%;
 }
 
 .history-title {
   color: #475569;
   margin-bottom: 5px;
   margin-top: 7px;
+}
+
+@media (max-width: 767px) {
+  .transactions-section {
+    width: 100%;
+  }
+  .transactions-container {
+    flex-direction: column;
+  }
+  .form-style {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .history-section {
+    width: 100%;
+  }
+  .history-title {
+    font-size: 13px;
+  }
 }
 
 .history-items-list {
@@ -117,17 +152,31 @@
   padding-left: 0;
 }
 
-.history-header {
-  border-bottom: solid 1px #7e858e;
+.history-header-item {
+  border: solid 1px #7e858e;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: ; */
   align-items: center;
   width: 100%;
-  padding: 0;
+  /* padding-right: 32px; */
 }
 
 .header-info {
   font-weight: 600;
   font-size: 13px;
   color: #1e293b;
+  margin: 5px 14px;
+}
+
+@media (max-width: 767px) {
+  .history-items-list {
+    width: 100%;
+  }
+  .transaction-title {
+    font-size: 17px;
+  }
+  .header-info {
+    font-size: 9px;
+    margin: 2px 7px;
+  }
 }

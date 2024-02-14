@@ -12,12 +12,14 @@ const TransactionItem = props => {
   }
 
   return (
-    <li className="transaction-history">
-      <p className="history-title">{title}</p>
-      <p className="history-amount">{amount}</p>
-      <p className="history-type">{type}</p>
+    <li className="transaction-history-item">
+      <div className="item-alignment">
+        <p className="history-item">{title}</p>
+        <p className="history-item">Rs {amount}</p>
+        <p className="history-item">{type}</p>
+      </div>
       <button
-        className="history-delete-btn"
+        className="item-delete-btn"
         type="button"
         data-testid="delete"
         onClick={onDeleteClicked}
