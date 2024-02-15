@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
   /* align-self: center; */
   margin: 78px auto;
@@ -39,6 +39,7 @@
 @media (max-width: 767px) {
   .user-details-section {
     text-align: center;
+    margin-bottom: 11px;
   }
   .greet-user {
     font-size: 21px;
@@ -139,6 +140,7 @@
   }
   .history-section {
     width: 100%;
+    padding: 24px 9px;
   }
   .history-title {
     font-size: 13px;
@@ -170,13 +172,13 @@
 
 @media (max-width: 767px) {
   .history-items-list {
-    width: 100%;
+    width: 90%;
   }
   .transaction-title {
     font-size: 17px;
   }
   .header-info {
     font-size: 9px;
-    margin: 2px 7px;
+    margin: 2px 15px;
   }
 }
