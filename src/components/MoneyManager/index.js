@@ -106,7 +106,7 @@ class MoneyManager extends Component {
     return (
       <div className="app-container">
         <div className="user-details-section">
-          <h1 className="greet-user">Hi,Richard</h1>
+          <h1 className="greet-user">Hi,Dinesh</h1>
           <p className="welcome-msg">
             Welcome back to your
             <span className="welcome-title"> Money Manager</span>
