@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 80%;
   /* align-self: center; */
   margin: 78px auto;
@@ -21,6 +21,7 @@
   border-radius: 13px;
   padding: 19px 23px;
   box-shadow: 0 0 4px #bcd5f8;
+  margin-bottom: 24px;
 }
 
 .greet-user {
@@ -39,7 +40,7 @@
 @media (max-width: 767px) {
   .user-details-section {
     text-align: center;
-    margin-bottom: 11px;
+    /* margin-bottom: 11px; */
   }
   .greet-user {
     font-size: 21px;
@@ -150,14 +151,15 @@
 .history-items-list {
   margin-top: 0;
   border: solid 1.1px #7e858e;
+  border-bottom: none;
   list-style-type: none;
   padding-left: 0;
 }
 
 .history-header-item {
-  border: solid 1px #7e858e;
+  border-bottom: solid 1px #7e858e;
   display: flex;
-  /* justify-content: ; */
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   /* padding-right: 32px; */
@@ -179,6 +181,6 @@
   }
   .header-info {
     font-size: 9px;
-    margin: 2px 15px;
+    margin: 2px 21px;
   }
 }

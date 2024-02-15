@@ -10,7 +10,6 @@
 .item-alignment {
   display: flex;
   justify-content: space-between;
-
   width: 75%;
 }
 .history-item {
@@ -44,5 +43,9 @@
   .item-delete-btn {
     width: 11px;
     height: 11px;
+  }
+  .item-alignment {
+    /* padding-left: 7px; */
+    margin-left: 5px;
   }
 }
